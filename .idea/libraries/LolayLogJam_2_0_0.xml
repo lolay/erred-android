@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="LolayLogJam-2.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LolayErred/build/exploded-aar/com.lolay.android/LolayLogJam/2.0.0/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/LolayErred/build/exploded-aar/com.lolay.android/LolayLogJam/2.0.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
