@@ -1,6 +1,13 @@
 apply plugin: 'android-library'
 apply plugin: 'maven-publish'
 
+if (project.hasProperty('isSnapshot')) 
+{
+	mavenSnapshot = project.property('isSnapshot')
+}
+
+def snapshotString = (Integer.parseInt(mavenSnapshot)==1) ? '-SNAPSHOT' : ""
+
 repositories {
     mavenLocal()
 	mavenCentral()
@@ -23,8 +30,6 @@ android {
 }
 
 dependencies {
-	def snapshotString = Integer.parseInt(mavenSnapshot)==0 ? '' : '-SNAPSHOT' 
-	
     compile 'com.android.support:appcompat-v7:19.+'
 	compile 'com.lolay.android:lolay-logjam:2' + snapshotString + '@aar'
 	compile 'commons-lang:commons-lang:2.6'
